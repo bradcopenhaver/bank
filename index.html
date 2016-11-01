@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Epicodus Credit Union</h1>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <form id="newAccount">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="initdep">Initial deposit:</label>
+            <input id="initialDeposit" class="form-control" type="number">
+          </div>
+          <button type="submit" class="btn">Create Account</button>
+        </form>
+      </div>
+      <div class="col-md-3 col-md-offset-4">
+        <form id="transactions">
+          <div class="form-group">
+            <label for="deposit">Deposit amount:</label>
+            <input id="deposit" class="form-control" type="number">
+          </div>
+          <div class="form-group">
+            <label for="withdrawal">Withdrawal amount:</label>
+            <input id="withdrawal" class="form-control" type="number">
+          </div>
+          <button type="submit" class="btn">Submit Transaction</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div id="display">
+          <div class="form-group">
+            <label for="balance">Current Balance:</label>
+            <input id="balance" readonly class="form-control" type="number">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
